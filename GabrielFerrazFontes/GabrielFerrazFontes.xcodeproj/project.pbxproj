@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B7DC3B5259034DC0034AF5C /* GabrielFerrazFontesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3B4259034DC0034AF5C /* GabrielFerrazFontesApp.swift */; };
+		7B7DC3B7259034DC0034AF5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3B6259034DC0034AF5C /* ContentView.swift */; };
+		7B7DC3B9259034DF0034AF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7DC3B8259034DF0034AF5C /* Assets.xcassets */; };
+		7B7DC3BC259034DF0034AF5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7DC3BB259034DF0034AF5C /* Preview Assets.xcassets */; };
+		7B7DC3BE259034DF0034AF5C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3BD259034DF0034AF5C /* Persistence.swift */; };
+		7B7DC3C1259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3BF259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld */; };
+		7B7DC3CC259034DF0034AF5C /* GabrielFerrazFontesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3CB259034DF0034AF5C /* GabrielFerrazFontesTests.swift */; };
+		7B7DC3D7259034DF0034AF5C /* GabrielFerrazFontesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3D6259034DF0034AF5C /* GabrielFerrazFontesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B7DC3C8259034DF0034AF5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B7DC3A9259034DC0034AF5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B7DC3B0259034DC0034AF5C;
+			remoteInfo = GabrielFerrazFontes;
+		};
+		7B7DC3D3259034DF0034AF5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B7DC3A9259034DC0034AF5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B7DC3B0259034DC0034AF5C;
+			remoteInfo = GabrielFerrazFontes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B7DC3B1259034DC0034AF5C /* GabrielFerrazFontes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabrielFerrazFontes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7DC3B4259034DC0034AF5C /* GabrielFerrazFontesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabrielFerrazFontesApp.swift; sourceTree = "<group>"; };
+		7B7DC3B6259034DC0034AF5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B7DC3B8259034DF0034AF5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B7DC3BB259034DF0034AF5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B7DC3BD259034DF0034AF5C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7B7DC3C0259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GabrielFerrazFontes.xcdatamodel; sourceTree = "<group>"; };
+		7B7DC3C2259034DF0034AF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7DC3C7259034DF0034AF5C /* GabrielFerrazFontesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GabrielFerrazFontesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7DC3CB259034DF0034AF5C /* GabrielFerrazFontesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabrielFerrazFontesTests.swift; sourceTree = "<group>"; };
+		7B7DC3CD259034DF0034AF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7DC3D2259034DF0034AF5C /* GabrielFerrazFontesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GabrielFerrazFontesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7DC3D6259034DF0034AF5C /* GabrielFerrazFontesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabrielFerrazFontesUITests.swift; sourceTree = "<group>"; };
+		7B7DC3D8259034DF0034AF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B7DC3AE259034DC0034AF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7DC3C4259034DF0034AF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7DC3CF259034DF0034AF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B7DC3A8259034DC0034AF5C = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3B3259034DC0034AF5C /* GabrielFerrazFontes */,
+				7B7DC3CA259034DF0034AF5C /* GabrielFerrazFontesTests */,
+				7B7DC3D5259034DF0034AF5C /* GabrielFerrazFontesUITests */,
+				7B7DC3B2259034DC0034AF5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B7DC3B2259034DC0034AF5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3B1259034DC0034AF5C /* GabrielFerrazFontes.app */,
+				7B7DC3C7259034DF0034AF5C /* GabrielFerrazFontesTests.xctest */,
+				7B7DC3D2259034DF0034AF5C /* GabrielFerrazFontesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B7DC3B3259034DC0034AF5C /* GabrielFerrazFontes */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3B4259034DC0034AF5C /* GabrielFerrazFontesApp.swift */,
+				7B7DC3B6259034DC0034AF5C /* ContentView.swift */,
+				7B7DC3B8259034DF0034AF5C /* Assets.xcassets */,
+				7B7DC3BD259034DF0034AF5C /* Persistence.swift */,
+				7B7DC3C2259034DF0034AF5C /* Info.plist */,
+				7B7DC3BF259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld */,
+				7B7DC3BA259034DF0034AF5C /* Preview Content */,
+			);
+			path = GabrielFerrazFontes;
+			sourceTree = "<group>";
+		};
+		7B7DC3BA259034DF0034AF5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3BB259034DF0034AF5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B7DC3CA259034DF0034AF5C /* GabrielFerrazFontesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3CB259034DF0034AF5C /* GabrielFerrazFontesTests.swift */,
+				7B7DC3CD259034DF0034AF5C /* Info.plist */,
+			);
+			path = GabrielFerrazFontesTests;
+			sourceTree = "<group>";
+		};
+		7B7DC3D5259034DF0034AF5C /* GabrielFerrazFontesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3D6259034DF0034AF5C /* GabrielFerrazFontesUITests.swift */,
+				7B7DC3D8259034DF0034AF5C /* Info.plist */,
+			);
+			path = GabrielFerrazFontesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B7DC3B0259034DC0034AF5C /* GabrielFerrazFontes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B7DC3DB259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontes" */;
+			buildPhases = (
+				7B7DC3AD259034DC0034AF5C /* Sources */,
+				7B7DC3AE259034DC0034AF5C /* Frameworks */,
+				7B7DC3AF259034DC0034AF5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GabrielFerrazFontes;
+			productName = GabrielFerrazFontes;
+			productReference = 7B7DC3B1259034DC0034AF5C /* GabrielFerrazFontes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B7DC3C6259034DF0034AF5C /* GabrielFerrazFontesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B7DC3DE259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontesTests" */;
+			buildPhases = (
+				7B7DC3C3259034DF0034AF5C /* Sources */,
+				7B7DC3C4259034DF0034AF5C /* Frameworks */,
+				7B7DC3C5259034DF0034AF5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B7DC3C9259034DF0034AF5C /* PBXTargetDependency */,
+			);
+			name = GabrielFerrazFontesTests;
+			productName = GabrielFerrazFontesTests;
+			productReference = 7B7DC3C7259034DF0034AF5C /* GabrielFerrazFontesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B7DC3D1259034DF0034AF5C /* GabrielFerrazFontesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B7DC3E1259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontesUITests" */;
+			buildPhases = (
+				7B7DC3CE259034DF0034AF5C /* Sources */,
+				7B7DC3CF259034DF0034AF5C /* Frameworks */,
+				7B7DC3D0259034DF0034AF5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B7DC3D4259034DF0034AF5C /* PBXTargetDependency */,
+			);
+			name = GabrielFerrazFontesUITests;
+			productName = GabrielFerrazFontesUITests;
+			productReference = 7B7DC3D2259034DF0034AF5C /* GabrielFerrazFontesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B7DC3A9259034DC0034AF5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7B7DC3B0259034DC0034AF5C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					7B7DC3C6259034DF0034AF5C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7B7DC3B0259034DC0034AF5C;
+					};
+					7B7DC3D1259034DF0034AF5C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7B7DC3B0259034DC0034AF5C;
+					};
+				};
+			};
+			buildConfigurationList = 7B7DC3AC259034DC0034AF5C /* Build configuration list for PBXProject "GabrielFerrazFontes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B7DC3A8259034DC0034AF5C;
+			productRefGroup = 7B7DC3B2259034DC0034AF5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B7DC3B0259034DC0034AF5C /* GabrielFerrazFontes */,
+				7B7DC3C6259034DF0034AF5C /* GabrielFerrazFontesTests */,
+				7B7DC3D1259034DF0034AF5C /* GabrielFerrazFontesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B7DC3AF259034DC0034AF5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7DC3BC259034DF0034AF5C /* Preview Assets.xcassets in Resources */,
+				7B7DC3B9259034DF0034AF5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7DC3C5259034DF0034AF5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7DC3D0259034DF0034AF5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B7DC3AD259034DC0034AF5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7DC3BE259034DF0034AF5C /* Persistence.swift in Sources */,
+				7B7DC3B7259034DC0034AF5C /* ContentView.swift in Sources */,
+				7B7DC3C1259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld in Sources */,
+				7B7DC3B5259034DC0034AF5C /* GabrielFerrazFontesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7DC3C3259034DF0034AF5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7DC3CC259034DF0034AF5C /* GabrielFerrazFontesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7DC3CE259034DF0034AF5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7DC3D7259034DF0034AF5C /* GabrielFerrazFontesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B7DC3C9259034DF0034AF5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B7DC3B0259034DC0034AF5C /* GabrielFerrazFontes */;
+			targetProxy = 7B7DC3C8259034DF0034AF5C /* PBXContainerItemProxy */;
+		};
+		7B7DC3D4259034DF0034AF5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B7DC3B0259034DC0034AF5C /* GabrielFerrazFontes */;
+			targetProxy = 7B7DC3D3259034DF0034AF5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7B7DC3D9259034DF0034AF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B7DC3DA259034DF0034AF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B7DC3DC259034DF0034AF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GabrielFerrazFontes/Preview Content\"";
+				DEVELOPMENT_TEAM = Q6B7N567Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GabrielFerrazFontes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.GabrielFerrazFontes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B7DC3DD259034DF0034AF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GabrielFerrazFontes/Preview Content\"";
+				DEVELOPMENT_TEAM = Q6B7N567Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GabrielFerrazFontes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.GabrielFerrazFontes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B7DC3DF259034DF0034AF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6B7N567Z6;
+				INFOPLIST_FILE = GabrielFerrazFontesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.GabrielFerrazFontesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GabrielFerrazFontes.app/GabrielFerrazFontes";
+			};
+			name = Debug;
+		};
+		7B7DC3E0259034DF0034AF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6B7N567Z6;
+				INFOPLIST_FILE = GabrielFerrazFontesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.GabrielFerrazFontesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GabrielFerrazFontes.app/GabrielFerrazFontes";
+			};
+			name = Release;
+		};
+		7B7DC3E2259034DF0034AF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6B7N567Z6;
+				INFOPLIST_FILE = GabrielFerrazFontesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.GabrielFerrazFontesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GabrielFerrazFontes;
+			};
+			name = Debug;
+		};
+		7B7DC3E3259034DF0034AF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6B7N567Z6;
+				INFOPLIST_FILE = GabrielFerrazFontesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.GabrielFerrazFontesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GabrielFerrazFontes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B7DC3AC259034DC0034AF5C /* Build configuration list for PBXProject "GabrielFerrazFontes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B7DC3D9259034DF0034AF5C /* Debug */,
+				7B7DC3DA259034DF0034AF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B7DC3DB259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B7DC3DC259034DF0034AF5C /* Debug */,
+				7B7DC3DD259034DF0034AF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B7DC3DE259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B7DC3DF259034DF0034AF5C /* Debug */,
+				7B7DC3E0259034DF0034AF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B7DC3E1259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B7DC3E2259034DF0034AF5C /* Debug */,
+				7B7DC3E3259034DF0034AF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7B7DC3BF259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B7DC3C0259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodel */,
+			);
+			currentVersion = 7B7DC3C0259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodel */;
+			path = GabrielFerrazFontes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7B7DC3A9259034DC0034AF5C /* Project object */;
+}
