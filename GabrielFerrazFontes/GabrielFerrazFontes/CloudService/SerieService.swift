@@ -7,16 +7,37 @@
 
 import Foundation
 
+/**
+ Protocol of getting data from api
+ */
 protocol SerieService {
     
+    /**
+     Fetch series from api based on some parameters
+     
+     - Parameters:
+        - endpoint: options of endpoints to fetch from api
+        - page: which page get data from api
+        - completion: Result of fetch, return a response and an error
+     */
     func fetchSeries(from endpoint: SerieListEndpoint, page: Int, completion: @escaping (Result<SerieResponse, SerieError>) -> ())
     
 }
 
+/**
+ Options of endpoint to get data
+ */
 enum SerieListEndpoint: String, CaseIterable {
+    /// series that are playing
     case nowPlaying = "now_playing"
+    
+    /// dont release series
     case upcoming
+    
+    /// most rated series
     case topRated = "top_rated"
+    
+    /// most popular series
     case popular
     
     var description: String {
@@ -29,11 +50,23 @@ enum SerieListEndpoint: String, CaseIterable {
     }
 }
 
+/**
+ Possible Erros to receive
+ */
 enum SerieError: Error, CustomNSError {
+    /// Failed to fetch data
     case apiError
+    
+    /// Invalid EndPoint
     case invalidEndPoint
+    
+    /// Invalid Response
     case invalidResponse
+    
+    /// No data received
     case noData
+    
+    /// Failed to decode data
     case serializationError
     
     var localizedDescription: String {

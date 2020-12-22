@@ -8,16 +8,32 @@
 import Foundation
 import RxSwift
 
+/**
+ Protocol to comunicate with api
+ */
 protocol SerieServiceAPIProtocol{
     
+    /**
+     Get a behavior subject of series
+     */
     func getDataArray() -> BehaviorSubject<[SerieData]>
+    
+    /**
+     Fetch data from api and populate series array
+     
+     - Parameters:
+        - currentListSize: how much itens had at list
+     */
     func fetchListItems(currentListSize: Int)
     
 }
 
+/**
+ Class responsable to comunicate between aplication and api
+ */
 class SerieServiceAPI: SerieServiceAPIProtocol{
   
-    // this is an observable which holds our data
+    /// Observable array to hold series data
     private let seriesObservable = BehaviorSubject<[SerieData]>(value: [])
     
     func getDataArray() -> BehaviorSubject<[SerieData]>{
