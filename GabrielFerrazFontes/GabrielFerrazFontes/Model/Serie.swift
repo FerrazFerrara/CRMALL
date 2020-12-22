@@ -7,31 +7,35 @@
 
 import Foundation
 
-public struct SerieResponse: Decodable {
-    public let results: [SerieData]
-}
-
+/**
+ Serie Model for API
+ */
 public struct SerieData: Decodable, Identifiable {
     
+    /// id of serie
     public let id: Int
+    /// name of serie
     public let name: String
+    /// poster path to serie poster image
     public let posterPath: String?
+    /// overview of serie
     public let overview: String
+    /// vote average of serie
     public let voteAverage: Double
+    /// how many people vote for this serie
     public let voteCount: Int
-    public let genres: [SerieGenre]?
+    /// genres of serie
+    public let genres: GenreResponse?
     
+    /// url of poster
     var posterURL: URL? {
         return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath ?? "")")
     }
     
+    /// first genre of serie in string formart
     var genreString: String {
         print(self.genres)
-        return self.genres?.first?.name ?? "n/a"
+//        return self.genres.results?.first?.name ?? "n/a"
+        return "n/a"
     }
-}
-
-public struct SerieGenre: Decodable {
-    let id: Int
-    let name: String
 }

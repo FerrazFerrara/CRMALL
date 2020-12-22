@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6282A28A8699876653AFAE0C /* Pods_GabrielFerrazFontes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D0400AD2F5F6EA000E74BF /* Pods_GabrielFerrazFontes.framework */; };
+		7B3F43612592497200F406FC /* SerieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F43602592497200F406FC /* SerieResponse.swift */; };
+		7B3F4366259249B300F406FC /* SerieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F4365259249B300F406FC /* SerieGenre.swift */; };
+		7B3F436B259249E300F406FC /* GenreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F436A259249E300F406FC /* GenreResponse.swift */; };
 		7B66B673259133A80001E58E /* Serie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B671259133A80001E58E /* Serie+CoreDataProperties.swift */; };
 		7B66B674259133A80001E58E /* Serie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B672259133A80001E58E /* Serie+CoreDataClass.swift */; };
 		7B66B67B25914C970001E58E /* ScrollCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B67A25914C970001E58E /* ScrollCellViewModel.swift */; };
@@ -60,6 +63,9 @@
 		3C22C3C0A7F086D381BB7183 /* Pods-GabrielFerrazFontes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontes.debug.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontes/Pods-GabrielFerrazFontes.debug.xcconfig"; sourceTree = "<group>"; };
 		5AA46241CBA5FCB16D6D9EC2 /* Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C1EAD27CCAACABB9010C4A /* Pods_GabrielFerrazFontesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GabrielFerrazFontesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3F43602592497200F406FC /* SerieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieResponse.swift; sourceTree = "<group>"; };
+		7B3F4365259249B300F406FC /* SerieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieGenre.swift; sourceTree = "<group>"; };
+		7B3F436A259249E300F406FC /* GenreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreResponse.swift; sourceTree = "<group>"; };
 		7B66B671259133A80001E58E /* Serie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Serie+CoreDataProperties.swift"; path = "/Users/ferraz/Desktop/Git Repositorios/CRMALL/CRMALL/GabrielFerrazFontes/GabrielFerrazFontes/Model/Serie+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		7B66B672259133A80001E58E /* Serie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Serie+CoreDataClass.swift"; path = "/Users/ferraz/Desktop/Git Repositorios/CRMALL/CRMALL/GabrielFerrazFontes/GabrielFerrazFontes/Model/Serie+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		7B66B67A25914C970001E58E /* ScrollCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCellViewModel.swift; sourceTree = "<group>"; };
@@ -205,6 +211,9 @@
 				7B66B672259133A80001E58E /* Serie+CoreDataClass.swift */,
 				7B66B671259133A80001E58E /* Serie+CoreDataProperties.swift */,
 				7B7DC3EE259037890034AF5C /* Serie.swift */,
+				7B3F43602592497200F406FC /* SerieResponse.swift */,
+				7B3F4365259249B300F406FC /* SerieGenre.swift */,
+				7B3F436A259249E300F406FC /* GenreResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -513,8 +522,10 @@
 				7B7DC3BE259034DF0034AF5C /* Persistence.swift in Sources */,
 				7B7DC3B7259034DC0034AF5C /* ContentView.swift in Sources */,
 				7BE0561A2590F583003CAED6 /* ImageLoader.swift in Sources */,
+				7B3F43612592497200F406FC /* SerieResponse.swift in Sources */,
 				7B7DC3C1259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld in Sources */,
 				7BE056142590ED70003CAED6 /* Utils.swift in Sources */,
+				7B3F436B259249E300F406FC /* GenreResponse.swift in Sources */,
 				7BE0560F2590ECB2003CAED6 /* SerieStore.swift in Sources */,
 				7BE0560525905EA0003CAED6 /* ScrollViewCell.swift in Sources */,
 				7B7DC40E2590486C0034AF5C /* InfiniteScrollViewModel.swift in Sources */,
@@ -528,6 +539,7 @@
 				7BE0562525911184003CAED6 /* FavoritesSeriesView.swift in Sources */,
 				7BE055F825904DFA003CAED6 /* ObservableArray.swift in Sources */,
 				7B66B674259133A80001E58E /* Serie+CoreDataClass.swift in Sources */,
+				7B3F4366259249B300F406FC /* SerieGenre.swift in Sources */,
 				7BE055F325904B75003CAED6 /* InfinitScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

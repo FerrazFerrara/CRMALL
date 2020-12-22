@@ -16,7 +16,8 @@ struct InfiniteScrollView: View {
     /// reference of core data managed object
     @Environment(\.managedObjectContext) private var viewContext
     /// Observed Object which holds the array of series to populate the list with.
-    @ObservedObject var myList = ObservableArray<SerieData>(array: [SerieData(id: 0, name: "aaa", posterPath: "", overview: "bbbb", voteAverage: 8.0, voteCount: 2, genres: [SerieGenre(id: 0, name: "Drama")])])
+    @ObservedObject var myList = ObservableArray<SerieData>(array: [SerieData(id: 0, name: "aaa", posterPath: "", overview: "bbbb", voteAverage: 8.0, voteCount: 2, genres: GenreResponse(results: []))])
+//    @ObservedObject var myList = ObservableArray<SerieData>(array: [])
         
     /// reference of view model
     let viewModel = InfiniteScrollViewModel()

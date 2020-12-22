@@ -9,7 +9,9 @@
 import Foundation
 import CoreData
 
-
+/**
+ Class of series at core data
+ */
 public class Serie: NSManagedObject {
 
 }

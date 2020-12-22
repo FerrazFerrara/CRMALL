@@ -32,7 +32,7 @@ class FavoritesSeriesViewModel {
         var seriesData: [SerieData] = []
         
         for serie in seriesCoreData {
-            seriesData.append(SerieData(id: Int(serie.id), name: serie.name ?? "Sharknado", posterPath: serie.posterPath, overview: serie.overview ?? "Sem dados", voteAverage: serie.voteAverage, voteCount: Int(serie.voteCount), genres: [SerieGenre(id: 0, name: serie.gender ?? "n/a")]))
+//            seriesData.append(SerieData(id: Int(serie.id), name: serie.name ?? "Sharknado", posterPath: serie.posterPath, overview: serie.overview ?? "Sem dados", voteAverage: serie.voteAverage, voteCount: Int(serie.voteCount), genres: [SerieGenre(id: 0, name: serie.gender ?? "n/a")]))
         }
         
         return seriesData
