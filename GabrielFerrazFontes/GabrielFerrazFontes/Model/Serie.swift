@@ -25,7 +25,7 @@ public struct SerieData: Decodable, Identifiable {
     /// how many people vote for this serie
     public let voteCount: Int
     /// genres of serie
-    public let genres: GenreResponse?
+    public let genres: [SerieGenre]?
     
     /// url of poster
     var posterURL: URL? {
@@ -35,7 +35,6 @@ public struct SerieData: Decodable, Identifiable {
     /// first genre of serie in string formart
     var genreString: String {
         print(self.genres)
-//        return self.genres.results?.first?.name ?? "n/a"
-        return "n/a"
+        return self.genres?.first?.name ?? "n/a"
     }
 }

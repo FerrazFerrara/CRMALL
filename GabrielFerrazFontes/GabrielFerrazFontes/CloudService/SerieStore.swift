@@ -22,6 +22,9 @@ class SerieStore: SerieService {
     /// base url of api
     private let baseAPIURL = "https://api.themoviedb.org/3"
     
+    /// bearer token
+    private let bearerToken = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkY2ZmZjQ2ZWM3MWY2ZDQ1NGJkNjdiY2JjZTU0NzEzMSIsInN1YiI6IjVmZTAwMGQ3NWIzNzBkMDA0MTQ0YWFjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jJMd-F51-zuk1S9fpCs_sGEszeUMQDpgp1fLT4m7NKE"
+    
     /// reference of url session singleton
     private let urlSession = URLSession.shared
     
@@ -34,7 +37,7 @@ class SerieStore: SerieService {
             completion(.failure(.invalidEndPoint))
             return
         }
-        self.loadURLandDecoder(url: url, params: ["language": "pt-BR", "page": "\(page)"], completion: completion)
+        self.loadURLandDecoder(url: url, params: ["language": "pt-BR", "page": "\(page)", "Authorization": "Bearer \(bearerToken)"], completion: completion)
     }
     
     /**
