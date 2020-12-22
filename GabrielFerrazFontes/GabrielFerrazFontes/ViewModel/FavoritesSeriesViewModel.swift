@@ -8,8 +8,14 @@
 import Foundation
 import CoreData
 
+/**
+ Favorite Series View Model
+ */
 class FavoritesSeriesViewModel {
     
+    /**
+     get data from core data
+     */
     public func fetchData(viewContext: NSManagedObjectContext) -> [SerieData]{
         var seriesCoreData = [Serie]()
         let fetchRequest = NSFetchRequest<Serie>(entityName: "Serie")
@@ -19,6 +25,9 @@ class FavoritesSeriesViewModel {
         return translateCoreDataSeries(seriesCoreData: seriesCoreData)
     }
     
+    /**
+     translate serie to serieData
+     */
     private func translateCoreDataSeries(seriesCoreData: [Serie]) -> [SerieData]{
         var seriesData: [SerieData] = []
         

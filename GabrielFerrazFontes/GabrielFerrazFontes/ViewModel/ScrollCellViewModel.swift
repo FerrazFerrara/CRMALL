@@ -8,8 +8,14 @@
 import Foundation
 import CoreData
 
+/**
+ Scroll Cell View Model
+ */
 class ScrollCellViewModel {
     
+    /**
+     transform SerieData to Serie to save at Core Data
+     */
     public func favoriteNewSerie(context: NSManagedObjectContext, serie: SerieData) {
         let newSerie = Serie(context: context)
 //        newSerie.gender = serie.gender

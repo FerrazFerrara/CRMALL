@@ -8,39 +8,45 @@
 import Foundation
 import RxSwift
 
+/**
+ View Model of infinite Scroll
+ */
 class InfiniteScrollViewModel {
-
-  let infiniteScrollRepo: SerieServiceAPIProtocol
-  var viewUpdate: ViewUpdateProtocol? = nil
-  let disposeBag = DisposeBag()
-
-  init (infiniteScrollRepo: SerieServiceAPIProtocol = SerieServiceAPI()){
-
-    self.infiniteScrollRepo = infiniteScrollRepo
-
-    // subscribe and start listening for changes in our data
-    self.infiniteScrollRepo.getDataArray().subscribe({ [weak self] newList in
-
-      // update list in our View class whenever list changes
-      self?.updateListItems(newList: newList.element)
-                                                      
-    }).disposed(by: disposeBag)
-
-  }
     
-
-  func getNewItems(currentListSize: Int){
-
-    // fetch new list items
-    infiniteScrollRepo.fetchListItems(currentListSize: currentListSize)
-
-  }
-  
-  func updateListItems(newList: [SerieData]?){
-    if newList != nil && !newList!.isEmpty{
-      // append new lists to the bottom of the list we already have
-        self.viewUpdate?.appendData(list: newList)
+    /// reference to get series list
+    let infiniteScrollRepo: SerieServiceAPIProtocol
+    /// delegate to send array of series to view
+    var viewUpdate: ViewUpdateProtocol? = nil
+    /// memory leak controller
+    let disposeBag = DisposeBag()
+    
+    init (infiniteScrollRepo: SerieServiceAPIProtocol = SerieServiceAPI()){
+        
+        self.infiniteScrollRepo = infiniteScrollRepo
+        
+        // subscribe and start listening for changes in array
+        self.infiniteScrollRepo.getDataArray().subscribe({ [weak self] newList in
+            
+            // update list in View class whenever list changes
+            self?.updateListItems(newList: newList.element)
+            
+        }).disposed(by: disposeBag)
+        
     }
-  }
-  
+    
+    
+    func getNewItems(currentListSize: Int){
+        
+        // fetch new list items
+        infiniteScrollRepo.fetchListItems(currentListSize: currentListSize)
+        
+    }
+    
+    func updateListItems(newList: [SerieData]?){
+        if newList != nil && !newList!.isEmpty{
+            // append new lists to the bottom of the list at view
+            self.viewUpdate?.appendData(list: newList)
+        }
+    }
+    
 }
