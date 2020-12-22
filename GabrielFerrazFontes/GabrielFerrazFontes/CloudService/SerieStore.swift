@@ -40,6 +40,32 @@ class SerieStore: SerieService {
         self.loadURLandDecoder(url: url, params: ["language": "pt-BR", "page": "\(page)", "Authorization": "Bearer \(bearerToken)"], completion: completion)
     }
     
+    func fetchGenre(completion: @escaping (Result<[SerieGenre], SerieError>) -> Void){
+        var components = URLComponents(string: baseAPIURL + "/genre/tv/list")
+        
+        let queryItems: [URLQueryItem] = [URLQueryItem(name: "api_key", value: apiKey)]
+        
+        components?.queryItems = queryItems
+        guard let url = components?.url else{
+            completion(.failure(.invalidEndPoint))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url){ data, response, error in
+            guard let data = data else {return}
+            
+            do{
+                let responseObj = try self.jsonDecoder.decode(GenreResponse.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(responseObj.genres))
+                }
+            }catch{
+                completion(.failure(.serializationError))
+            }
+        }
+        task.resume()
+    }
+    
     /**
      load url and Decode data
      - Parameters:

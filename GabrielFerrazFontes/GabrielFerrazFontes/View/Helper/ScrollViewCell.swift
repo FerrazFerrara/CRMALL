@@ -44,19 +44,23 @@ struct ScrollViewCell: View {
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
                 
-                Text("\(String(format: "%.1f", serie.voteAverage))/10.0 ● \(serie.voteCount) votos")
-                    .font(.footnote)
+                if serie.voteCount != 0 {
+                    Text("\(String(format: "%.1f", serie.voteAverage))/10.0 ● \(serie.voteCount) votos")
+                        .font(.footnote)
+                }
                 
                 Spacer()
             }
             
             Spacer()
             
-            Button(action: {
-                viewModel.favoriteNewSerie(context: viewContext, serie: serie)
-            }, label: {
-                Text("Favoritar")
-            })
+            if serie.voteCount != 0 {
+                Button(action: {
+                    viewModel.favoriteNewSerie(context: viewContext, serie: serie)
+                }, label: {
+                    Text("♡")
+                })
+            }
         }
     }
     

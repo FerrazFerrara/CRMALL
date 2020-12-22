@@ -19,6 +19,8 @@ class InfiniteScrollViewModel {
     var viewUpdate: ViewUpdateProtocol? = nil
     /// memory leak controller
     let disposeBag = DisposeBag()
+    /// genres array
+    var genres: [SerieGenre] = []
     
     init (infiniteScrollRepo: SerieServiceAPIProtocol = SerieServiceAPI()){
         
@@ -32,6 +34,21 @@ class InfiniteScrollViewModel {
             
         }).disposed(by: disposeBag)
         
+        fetchGenres()
+        
+    }
+    
+    func fetchGenres(){
+        
+        SerieStore.shared.fetchGenre(completion: { [weak self] (result) in
+            guard let self = self else { return }
+            switch result{
+            case .success(let response):
+                self.genres = response
+            case .failure(let error):
+                print(error)
+            }
+        })
     }
     
     

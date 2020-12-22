@@ -22,6 +22,8 @@ protocol SerieService {
      */
     func fetchSeries(from endpoint: SerieListEndpoint, page: Int, completion: @escaping (Result<SerieResponse, SerieError>) -> ())
     
+    func fetchGenre(completion: @escaping (Result<[SerieGenre], SerieError>) -> Void)
+    
 }
 
 /**

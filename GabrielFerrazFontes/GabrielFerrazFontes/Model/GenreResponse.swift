@@ -12,5 +12,9 @@ import Foundation
  */
 public struct GenreResponse: Decodable {
     /// array of series as a result
-    public let results: [SerieGenre]
+    public var genres: [SerieGenre]
+    
+    enum CodingKeys: String, CodingKey {
+        case genres
+    }
 }

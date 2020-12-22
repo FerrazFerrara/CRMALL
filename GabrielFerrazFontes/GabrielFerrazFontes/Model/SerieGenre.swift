@@ -12,5 +12,10 @@ import Foundation
  */
 public struct SerieGenre: Decodable {
     let id: Int
-    let name: String
+    let name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+    }
 }
