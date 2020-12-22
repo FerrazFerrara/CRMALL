@@ -7,8 +7,12 @@
 
 import SwiftUI
 
+/**
+ Root View, presents all series
+ */
 struct AllSeriesView: View {
     
+    /// reference of core data managed object
     @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {

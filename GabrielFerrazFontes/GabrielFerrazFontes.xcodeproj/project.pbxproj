@@ -123,6 +123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B3F435C259243E900F406FC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7BE055F225904B75003CAED6 /* InfinitScrollView.swift */,
+				7BE0560425905EA0003CAED6 /* ScrollViewCell.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		7B7DC3A8259034DC0034AF5C = {
 			isa = PBXGroup;
 			children = (
@@ -214,10 +223,9 @@
 		7B7DC3EC259037560034AF5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B3F435C259243E900F406FC /* Helper */,
 				7BE0562425911182003CAED6 /* FavoritesSeriesView.swift */,
 				7B7DC3FF259043BA0034AF5C /* AllSeriesView.swift */,
-				7BE055F225904B75003CAED6 /* InfinitScrollView.swift */,
-				7BE0560425905EA0003CAED6 /* ScrollViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

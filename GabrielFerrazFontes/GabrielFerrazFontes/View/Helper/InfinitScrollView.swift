@@ -8,16 +8,17 @@
 import SwiftUI
 import RxSwift
 
+/**
+ Infinite Scroll View
+ */
 struct InfiniteScrollView: View {
 
+    /// reference of core data managed object
     @Environment(\.managedObjectContext) private var viewContext
-
-    
-    // an ObservedObject object which holds the array we populate our List with.
-//    @ObservedObject var myList = ObservableArray<Serie>(array: [Serie(id: 0, name: "aaa", genders: ["drama"], poster_path: "", overview: "bbbb", voteAverage: 8.0, voteCount: 2, popularity: 9.0)])
+    /// Observed Object which holds the array of series to populate the list with.
     @ObservedObject var myList = ObservableArray<SerieData>(array: [SerieData(id: 0, name: "aaa", posterPath: "", overview: "bbbb", voteAverage: 8.0, voteCount: 2, genres: [SerieGenre(id: 0, name: "Drama")])])
         
-    //initialize ViewModel class which we will use to requests for data
+    /// reference of view model
     let viewModel = InfiniteScrollViewModel()
 
     init() {
@@ -33,8 +34,6 @@ struct InfiniteScrollView: View {
                 .environment(\.managedObjectContext, viewContext)
                 .onAppear(perform: {
                 let count = self.myList.array.count
-                    print(count)
-                    print(index)
                 if index == count - 1 {
                     // request for more data since last row has being reached
                     self.viewModel.getNewItems(currentListSize: count)
@@ -51,7 +50,13 @@ extension InfiniteScrollView: ViewUpdateProtocol{
 
 }
 
+/**
+ Delegate to comunicate view model with view
+ */
 protocol ViewUpdateProtocol{
+    /**
+     append more data to array
+     */
     func appendData(list: [SerieData]?)
 }
 

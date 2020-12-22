@@ -8,20 +8,27 @@
 import Foundation
 import SwiftUI
 
+/**
+ Scroll View Cell
+ */
 struct ScrollViewCell: View {
     
+    /// reference of core data managed object
     @Environment(\.managedObjectContext) private var viewContext
+    /// serie of this cell
     @State var serie: SerieData
+    /// image loader
     @ObservedObject var imageLoader = ImageLoader()
     
+    /// reference to viewModel
     let viewModel = ScrollCellViewModel()
     
     var body: some View {
         HStack {
             
-            Image(uiImage: getImage(serie: serie))
+            Image(uiImage: getImage())
                 .resizable()
-                .frame(width: 95, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 95, height: 150, alignment: .center)
                 .onAppear {
                     self.imageLoader.loadImage(with: (serie.posterURL ?? URL(string: "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"))!)
                 }
@@ -32,7 +39,6 @@ struct ScrollViewCell: View {
                     .font(.title)
                     .multilineTextAlignment(.center)
                 
-//                Text("\(serie.genders[0]) \n\(serie.overview) \n\(String(format: "%.1f", serie.voteAverage))/10.0 ● \(serie.voteCount) votos")
                 Text("\(serie.genreString)\n\(serie.overview)")
                     .font(.body)
                     .multilineTextAlignment(.leading)
@@ -41,50 +47,29 @@ struct ScrollViewCell: View {
                 Text("\(String(format: "%.1f", serie.voteAverage))/10.0 ● \(serie.voteCount) votos")
                     .font(.footnote)
                 
-                
-//                Text("")
-//                    .font(.body)
-                
                 Spacer()
-                
-//                HStack {
-//                    Text(serie.voteAverage)
-//                }
             }
-            
-//            VStack {
-//                Text(serie.name)
-//                Spacer()
-//                Text(serie.genders[0])
-//                Spacer()
-//                Text(serie.overview)
-//                Spacer()
-//
-//                HStack {
-//                    Text(serie.voteAverage)
-//                    Spacer()
-//                    Text(serie.voteCount)
-//                }
-//
-//            }
             
             Spacer()
             
             Button(action: {
                 viewModel.favoriteNewSerie(context: viewContext, serie: serie)
             }, label: {
-                Text("❤️")
+                Text("Favoritar")
             })
         }
     }
     
-    func getImage(serie: SerieData) -> UIImage {
+    /**
+     Initialize a Image
+     */
+    func getImage() -> UIImage {
         let defaultImage = UIImage(named: "defaultPoster")!
-        
-        guard let url = serie.posterURL else { return defaultImage }
+
+        guard let url = self.serie.posterURL else { return defaultImage }
         guard let data = try? Data(contentsOf: url) else { return defaultImage }
         guard let image = UIImage(data: data) else { return defaultImage }
-        
+
         return image
     }
     
