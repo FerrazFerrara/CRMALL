@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6282A28A8699876653AFAE0C /* Pods_GabrielFerrazFontes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D0400AD2F5F6EA000E74BF /* Pods_GabrielFerrazFontes.framework */; };
+		7B66B673259133A80001E58E /* Serie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B671259133A80001E58E /* Serie+CoreDataProperties.swift */; };
+		7B66B674259133A80001E58E /* Serie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B672259133A80001E58E /* Serie+CoreDataClass.swift */; };
+		7B66B67B25914C970001E58E /* ScrollCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B67A25914C970001E58E /* ScrollCellViewModel.swift */; };
+		7B66B6802591512E0001E58E /* FavoritesSeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66B67F2591512E0001E58E /* FavoritesSeriesViewModel.swift */; };
 		7B7DC3B5259034DC0034AF5C /* GabrielFerrazFontesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3B4259034DC0034AF5C /* GabrielFerrazFontesApp.swift */; };
 		7B7DC3B7259034DC0034AF5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3B6259034DC0034AF5C /* ContentView.swift */; };
 		7B7DC3B9259034DF0034AF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7DC3B8259034DF0034AF5C /* Assets.xcassets */; };
@@ -15,6 +20,20 @@
 		7B7DC3C1259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3BF259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld */; };
 		7B7DC3CC259034DF0034AF5C /* GabrielFerrazFontesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3CB259034DF0034AF5C /* GabrielFerrazFontesTests.swift */; };
 		7B7DC3D7259034DF0034AF5C /* GabrielFerrazFontesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3D6259034DF0034AF5C /* GabrielFerrazFontesUITests.swift */; };
+		7B7DC3EF259037890034AF5C /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3EE259037890034AF5C /* Serie.swift */; };
+		7B7DC3F8259040930034AF5C /* SerieServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3F7259040930034AF5C /* SerieServiceAPI.swift */; };
+		7B7DC400259043BA0034AF5C /* AllSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC3FF259043BA0034AF5C /* AllSeriesView.swift */; };
+		7B7DC40E2590486C0034AF5C /* InfiniteScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DC40D2590486C0034AF5C /* InfiniteScrollViewModel.swift */; };
+		7BE055F325904B75003CAED6 /* InfinitScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE055F225904B75003CAED6 /* InfinitScrollView.swift */; };
+		7BE055F825904DFA003CAED6 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE055F725904DFA003CAED6 /* ObservableArray.swift */; };
+		7BE0560525905EA0003CAED6 /* ScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0560425905EA0003CAED6 /* ScrollViewCell.swift */; };
+		7BE0560A2590E9EC003CAED6 /* SerieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE056092590E9EB003CAED6 /* SerieService.swift */; };
+		7BE0560F2590ECB2003CAED6 /* SerieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0560E2590ECB1003CAED6 /* SerieStore.swift */; };
+		7BE056142590ED70003CAED6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE056132590ED70003CAED6 /* Utils.swift */; };
+		7BE0561A2590F583003CAED6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE056192590F583003CAED6 /* ImageLoader.swift */; };
+		7BE0562525911184003CAED6 /* FavoritesSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0562425911182003CAED6 /* FavoritesSeriesView.swift */; };
+		8E4D567A9DBB5ABB46575B1A /* Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA46241CBA5FCB16D6D9EC2 /* Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework */; };
+		DD9043EBDDC802D000586EEC /* Pods_GabrielFerrazFontesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1EAD27CCAACABB9010C4A /* Pods_GabrielFerrazFontesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14B359FF26F8BE252B3A4293 /* Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.release.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F5FAEBAEA1EE4EB2FFAE99A /* Pods-GabrielFerrazFontes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontes.release.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontes/Pods-GabrielFerrazFontes.release.xcconfig"; sourceTree = "<group>"; };
+		30D0400AD2F5F6EA000E74BF /* Pods_GabrielFerrazFontes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GabrielFerrazFontes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C22C3C0A7F086D381BB7183 /* Pods-GabrielFerrazFontes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontes.debug.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontes/Pods-GabrielFerrazFontes.debug.xcconfig"; sourceTree = "<group>"; };
+		5AA46241CBA5FCB16D6D9EC2 /* Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C1EAD27CCAACABB9010C4A /* Pods_GabrielFerrazFontesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GabrielFerrazFontesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B66B671259133A80001E58E /* Serie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Serie+CoreDataProperties.swift"; path = "/Users/ferraz/Desktop/Git Repositorios/CRMALL/CRMALL/GabrielFerrazFontes/GabrielFerrazFontes/Model/Serie+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		7B66B672259133A80001E58E /* Serie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Serie+CoreDataClass.swift"; path = "/Users/ferraz/Desktop/Git Repositorios/CRMALL/CRMALL/GabrielFerrazFontes/GabrielFerrazFontes/Model/Serie+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		7B66B67A25914C970001E58E /* ScrollCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCellViewModel.swift; sourceTree = "<group>"; };
+		7B66B67F2591512E0001E58E /* FavoritesSeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSeriesViewModel.swift; sourceTree = "<group>"; };
 		7B7DC3B1259034DC0034AF5C /* GabrielFerrazFontes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabrielFerrazFontes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7DC3B4259034DC0034AF5C /* GabrielFerrazFontesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabrielFerrazFontesApp.swift; sourceTree = "<group>"; };
 		7B7DC3B6259034DC0034AF5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +78,21 @@
 		7B7DC3D2259034DF0034AF5C /* GabrielFerrazFontesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GabrielFerrazFontesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7DC3D6259034DF0034AF5C /* GabrielFerrazFontesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GabrielFerrazFontesUITests.swift; sourceTree = "<group>"; };
 		7B7DC3D8259034DF0034AF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7DC3EE259037890034AF5C /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		7B7DC3F7259040930034AF5C /* SerieServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieServiceAPI.swift; sourceTree = "<group>"; };
+		7B7DC3FF259043BA0034AF5C /* AllSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSeriesView.swift; sourceTree = "<group>"; };
+		7B7DC40D2590486C0034AF5C /* InfiniteScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewModel.swift; sourceTree = "<group>"; };
+		7BE055F225904B75003CAED6 /* InfinitScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitScrollView.swift; sourceTree = "<group>"; };
+		7BE055F725904DFA003CAED6 /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
+		7BE0560425905EA0003CAED6 /* ScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewCell.swift; sourceTree = "<group>"; };
+		7BE056092590E9EB003CAED6 /* SerieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieService.swift; sourceTree = "<group>"; };
+		7BE0560E2590ECB1003CAED6 /* SerieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieStore.swift; sourceTree = "<group>"; };
+		7BE056132590ED70003CAED6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7BE056192590F583003CAED6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		7BE0562425911182003CAED6 /* FavoritesSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSeriesView.swift; sourceTree = "<group>"; };
+		BC8F7F065EB3C7788C302CA9 /* Pods-GabrielFerrazFontesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontesTests.release.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontesTests/Pods-GabrielFerrazFontesTests.release.xcconfig"; sourceTree = "<group>"; };
+		D58A23DB96BE574FAEFE6467 /* Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.debug.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5BFC3EE4D8A2FDCD370CC76 /* Pods-GabrielFerrazFontesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabrielFerrazFontesTests.debug.xcconfig"; path = "Target Support Files/Pods-GabrielFerrazFontesTests/Pods-GabrielFerrazFontesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6282A28A8699876653AFAE0C /* Pods_GabrielFerrazFontes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9043EBDDC802D000586EEC /* Pods_GabrielFerrazFontesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4D567A9DBB5ABB46575B1A /* Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,8 @@
 				7B7DC3CA259034DF0034AF5C /* GabrielFerrazFontesTests */,
 				7B7DC3D5259034DF0034AF5C /* GabrielFerrazFontesUITests */,
 				7B7DC3B2259034DC0034AF5C /* Products */,
+				8D2BB60B1D9C9AA3272D8621 /* Pods */,
+				AE9D7CA7D5FD5298218360CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +148,11 @@
 		7B7DC3B3259034DC0034AF5C /* GabrielFerrazFontes */ = {
 			isa = PBXGroup;
 			children = (
+				7BE056182590F56A003CAED6 /* Utils */,
+				7B7DC3ED259037670034AF5C /* CloudService */,
+				7B7DC3EC259037560034AF5C /* View */,
+				7B7DC3EB259037470034AF5C /* ViewModel */,
+				7B7DC3EA2590373F0034AF5C /* Model */,
 				7B7DC3B4259034DC0034AF5C /* GabrielFerrazFontesApp.swift */,
 				7B7DC3B6259034DC0034AF5C /* ContentView.swift */,
 				7B7DC3B8259034DF0034AF5C /* Assets.xcassets */,
@@ -136,6 +190,80 @@
 			path = GabrielFerrazFontesUITests;
 			sourceTree = "<group>";
 		};
+		7B7DC3EA2590373F0034AF5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B66B672259133A80001E58E /* Serie+CoreDataClass.swift */,
+				7B66B671259133A80001E58E /* Serie+CoreDataProperties.swift */,
+				7B7DC3EE259037890034AF5C /* Serie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B7DC3EB259037470034AF5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC40D2590486C0034AF5C /* InfiniteScrollViewModel.swift */,
+				7BE055F725904DFA003CAED6 /* ObservableArray.swift */,
+				7B66B67A25914C970001E58E /* ScrollCellViewModel.swift */,
+				7B66B67F2591512E0001E58E /* FavoritesSeriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B7DC3EC259037560034AF5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BE0562425911182003CAED6 /* FavoritesSeriesView.swift */,
+				7B7DC3FF259043BA0034AF5C /* AllSeriesView.swift */,
+				7BE055F225904B75003CAED6 /* InfinitScrollView.swift */,
+				7BE0560425905EA0003CAED6 /* ScrollViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B7DC3ED259037670034AF5C /* CloudService */ = {
+			isa = PBXGroup;
+			children = (
+				7B7DC3F7259040930034AF5C /* SerieServiceAPI.swift */,
+				7BE056092590E9EB003CAED6 /* SerieService.swift */,
+				7BE0560E2590ECB1003CAED6 /* SerieStore.swift */,
+			);
+			path = CloudService;
+			sourceTree = "<group>";
+		};
+		7BE056182590F56A003CAED6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7BE056132590ED70003CAED6 /* Utils.swift */,
+				7BE056192590F583003CAED6 /* ImageLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8D2BB60B1D9C9AA3272D8621 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C22C3C0A7F086D381BB7183 /* Pods-GabrielFerrazFontes.debug.xcconfig */,
+				2F5FAEBAEA1EE4EB2FFAE99A /* Pods-GabrielFerrazFontes.release.xcconfig */,
+				D58A23DB96BE574FAEFE6467 /* Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.debug.xcconfig */,
+				14B359FF26F8BE252B3A4293 /* Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.release.xcconfig */,
+				F5BFC3EE4D8A2FDCD370CC76 /* Pods-GabrielFerrazFontesTests.debug.xcconfig */,
+				BC8F7F065EB3C7788C302CA9 /* Pods-GabrielFerrazFontesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE9D7CA7D5FD5298218360CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D0400AD2F5F6EA000E74BF /* Pods_GabrielFerrazFontes.framework */,
+				5AA46241CBA5FCB16D6D9EC2 /* Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests.framework */,
+				70C1EAD27CCAACABB9010C4A /* Pods_GabrielFerrazFontesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B7DC3DB259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontes" */;
 			buildPhases = (
+				760DFC9E5FF11E8A2E58CFE9 /* [CP] Check Pods Manifest.lock */,
 				7B7DC3AD259034DC0034AF5C /* Sources */,
 				7B7DC3AE259034DC0034AF5C /* Frameworks */,
 				7B7DC3AF259034DC0034AF5C /* Resources */,
+				A4B560F3319BE34072F248F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B7DC3DE259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontesTests" */;
 			buildPhases = (
+				5096C2408C40C674B09096FA /* [CP] Check Pods Manifest.lock */,
 				7B7DC3C3259034DF0034AF5C /* Sources */,
 				7B7DC3C4259034DF0034AF5C /* Frameworks */,
 				7B7DC3C5259034DF0034AF5C /* Resources */,
@@ -178,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B7DC3E1259034DF0034AF5C /* Build configuration list for PBXNativeTarget "GabrielFerrazFontesUITests" */;
 			buildPhases = (
+				37099D71D9A4060922ED954B /* [CP] Check Pods Manifest.lock */,
 				7B7DC3CE259034DF0034AF5C /* Sources */,
 				7B7DC3CF259034DF0034AF5C /* Frameworks */,
 				7B7DC3D0259034DF0034AF5C /* Resources */,
+				DE654E3DBE86331C56AC1D83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,15 +393,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37099D71D9A4060922ED954B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5096C2408C40C674B09096FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GabrielFerrazFontesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760DFC9E5FF11E8A2E58CFE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GabrielFerrazFontes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B560F3319BE34072F248F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GabrielFerrazFontes/Pods-GabrielFerrazFontes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GabrielFerrazFontes/Pods-GabrielFerrazFontes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GabrielFerrazFontes/Pods-GabrielFerrazFontes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE654E3DBE86331C56AC1D83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests/Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B7DC3AD259034DC0034AF5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B66B673259133A80001E58E /* Serie+CoreDataProperties.swift in Sources */,
 				7B7DC3BE259034DF0034AF5C /* Persistence.swift in Sources */,
 				7B7DC3B7259034DC0034AF5C /* ContentView.swift in Sources */,
+				7BE0561A2590F583003CAED6 /* ImageLoader.swift in Sources */,
 				7B7DC3C1259034DF0034AF5C /* GabrielFerrazFontes.xcdatamodeld in Sources */,
+				7BE056142590ED70003CAED6 /* Utils.swift in Sources */,
+				7BE0560F2590ECB2003CAED6 /* SerieStore.swift in Sources */,
+				7BE0560525905EA0003CAED6 /* ScrollViewCell.swift in Sources */,
+				7B7DC40E2590486C0034AF5C /* InfiniteScrollViewModel.swift in Sources */,
+				7B7DC400259043BA0034AF5C /* AllSeriesView.swift in Sources */,
+				7BE0560A2590E9EC003CAED6 /* SerieService.swift in Sources */,
+				7B66B67B25914C970001E58E /* ScrollCellViewModel.swift in Sources */,
 				7B7DC3B5259034DC0034AF5C /* GabrielFerrazFontesApp.swift in Sources */,
+				7B7DC3EF259037890034AF5C /* Serie.swift in Sources */,
+				7B7DC3F8259040930034AF5C /* SerieServiceAPI.swift in Sources */,
+				7B66B6802591512E0001E58E /* FavoritesSeriesViewModel.swift in Sources */,
+				7BE0562525911184003CAED6 /* FavoritesSeriesView.swift in Sources */,
+				7BE055F825904DFA003CAED6 /* ObservableArray.swift in Sources */,
+				7B66B674259133A80001E58E /* Serie+CoreDataClass.swift in Sources */,
+				7BE055F325904B75003CAED6 /* InfinitScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +674,7 @@
 		};
 		7B7DC3DC259034DF0034AF5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C22C3C0A7F086D381BB7183 /* Pods-GabrielFerrazFontes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +697,7 @@
 		};
 		7B7DC3DD259034DF0034AF5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5FAEBAEA1EE4EB2FFAE99A /* Pods-GabrielFerrazFontes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +720,7 @@
 		};
 		7B7DC3DF259034DF0034AF5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BFC3EE4D8A2FDCD370CC76 /* Pods-GabrielFerrazFontesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +743,7 @@
 		};
 		7B7DC3E0259034DF0034AF5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8F7F065EB3C7788C302CA9 /* Pods-GabrielFerrazFontesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +766,7 @@
 		};
 		7B7DC3E2259034DF0034AF5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58A23DB96BE574FAEFE6467 /* Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +787,7 @@
 		};
 		7B7DC3E3259034DF0034AF5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B359FF26F8BE252B3A4293 /* Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct FavoritesSeriesView: View {
+    
+    @Environment(\.managedObjectContext) private var viewContext
+    @State private var series: [SerieData] = []
+    
+    let viewModel = FavoritesSeriesViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(series) { serie in
+            ScrollViewCell(serie: serie)
+        }.onAppear {
+            series = viewModel.fetchData(viewContext: viewContext)
+        }
     }
 }
 

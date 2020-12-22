@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct AllSeriesView: View {
+    
+    @Environment(\.managedObjectContext) private var viewContext
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                NavigationLink(destination: FavoritesSeriesView()) {
+                    Text("Favoritos")
+                }
+                
+                InfiniteScrollView()
+                    .environment(\.managedObjectContext, viewContext)
+            }
+            .navigationBarHidden(true)
+        }
     }
 }
 

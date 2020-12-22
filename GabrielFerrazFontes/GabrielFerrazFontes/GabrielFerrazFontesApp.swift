@@ -13,7 +13,7 @@ struct GabrielFerrazFontesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AllSeriesView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

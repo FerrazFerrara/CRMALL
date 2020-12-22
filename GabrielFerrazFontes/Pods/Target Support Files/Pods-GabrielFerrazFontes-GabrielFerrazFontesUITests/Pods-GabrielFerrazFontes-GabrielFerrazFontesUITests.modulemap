@@ -1,0 +1,6 @@
+framework module Pods_GabrielFerrazFontes_GabrielFerrazFontesUITests {
+  umbrella header "Pods-GabrielFerrazFontes-GabrielFerrazFontesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

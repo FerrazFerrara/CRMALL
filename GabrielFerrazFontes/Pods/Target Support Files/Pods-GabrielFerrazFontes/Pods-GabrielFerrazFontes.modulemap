@@ -1,0 +1,6 @@
+framework module Pods_GabrielFerrazFontes {
+  umbrella header "Pods-GabrielFerrazFontes-umbrella.h"
+
+  export *
+  module * { export * }
+}
